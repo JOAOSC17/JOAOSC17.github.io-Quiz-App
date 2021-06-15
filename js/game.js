@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
+        question: 'Quanto é 2 + 2?',
         choice1: '2',
         choice2: '4',
         choice3: '21',
@@ -21,15 +21,15 @@ let questions = [
     },
     {
         question:
-            "The tallest building in the world is located in which city?",
+            "A Maior construção do mundo está localizada em qual cidade?",
         choice1: "Dubai",
         choice2: "New York",
         choice3: "Shanghai",
-        choice4: "None of the above",
+        choice4: "Nenhuma dos anteriores",
         answer: 1,
     },
     {
-        question: "What percent of American adults believe that chocolate milk comes from brown cows?",
+        question: "Qual a porcentagem de americanos que acreditam que o leite achocolatado vem de vacas marrons?",
         choice1: "20%",
         choice2: "18%",
         choice3: "7%",
@@ -37,7 +37,7 @@ let questions = [
         answer: 3,
     },
     {
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        question: "Aproximadamente que porcentagem das interrupções de energia nos EUA são causadas por esquilos?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
@@ -64,7 +64,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    progressText.innerText = `Pergunta ${questionCounter} de ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
