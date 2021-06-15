@@ -41,6 +41,7 @@ body {
 #hud {
     display: flex;
     justify-content: space-between;
+    margin-top: 10rem;
 }
 
 .hud-prefix {
@@ -72,3 +73,18 @@ body {
         min-width: 40rem;
     }
 }
+@media screen and (max-width: 420px) {
+    .choice-container {
+        min-width: 25rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    #hud {
+        margin-top: 20rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    #hud {
+        margin-top: 30rem;
+    }
+} */
